@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="{{ url_for('static', filename='flexible_layout.css') }}" rel='stylesheet'>
+<link href="{{ url_for('static', filename='auth_code_flow.css') }}" rel="stylesheet">
+</head>
+<body>
+   <div id="wb_LayoutGrid1">
+      <div id="LayoutGrid1">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_LayoutGrid2">
+                  <div id="LayoutGrid2">
+                     <div class="row">
+                        <div class="col-1">
+                           <div id="wb_Heading2" style="display:block;width:100%;z-index:0;">
+                              <h1 id="Heading2">Pydentitester!</h1>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_FlexContainer2">
+      <div id="FlexContainer2">
+         <div id="wb_Card1" style="display:flex;z-index:3;" class="card">
+            <div id="Card1-card-header">Hacky initial testing flow</div>
+            <div id="Card1-card-body">
+               <div id="Card1-card-item1">Below you will need to enter your client secret, client ID, and the OIDC provider's discovery URL.  Once entered, click "Submit".</div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid8">
+      <form name="Formuloi" method="post" action="./oidc_executor" enctype="application/x-www-form-urlencoded" id="LayoutGrid8">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_LayoutGrid9">
+                  <div id="LayoutGrid9">
+                     <div class="row">
+                        <div class="col-1">
+                           <label for="Editbox1" id="Label3" style="display:inline-block;width:205px;line-height:16px;z-index:4;">OIDC Client Secret:</label>
+                        </div>
+                        <div class="col-2">
+                           <input type="text" id="Editbox1" style="display:inline-block;width:675px;height:25px;z-index:5;" name="Editbox1" value="" required>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="wb_LayoutGrid10">
+                  <div id="LayoutGrid10">
+                     <div class="row">
+                        <div class="col-1">
+                           <label for="Editbox2" id="Label4" style="display:inline-block;width:205px;line-height:16px;z-index:6;">OIDC Client ID:</label>
+                        </div>
+                        <div class="col-2">
+                           <input type="text" id="Editbox2" style="display:inline-block;width:675px;height:25px;z-index:7;" name="Editbox2" value="" required>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="wb_LayoutGrid11">
+                  <div id="LayoutGrid11">
+                     <div class="row">
+                        <div class="col-1">
+                           <label for="Editbox3" id="Label5" style="display:inline-block;width:205px;line-height:16px;z-index:8;">OIDC Discovery URL:</label>
+                        </div>
+                        <div class="col-2">
+                           <input type="text" id="Editbox3" style="display:inline-block;width:675px;height:25px;z-index:9;" name="Editbox3" value="" required>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="wb_LayoutGrid12">
+                  <div id="LayoutGrid12">
+                     <div class="row">
+                        <div class="col-1">
+                        </div>
+                        <div class="col-2">
+                           <input type="submit" id="Button1" name="Log in with OIDC" value="Log in with OIDC" style="display:inline-block;width:132px;height:25px;z-index:10;">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </form>
+   </div>
+</body>
+</html>

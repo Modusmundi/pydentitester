@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pydentitester Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="{{ url_for('static', filename='flexible_layout.css') }}" rel='stylesheet'>
+<link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
+</head>
+<body>
+   <div id="wb_LayoutGrid1">
+      <div id="LayoutGrid1">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_LayoutGrid2">
+                  <div id="LayoutGrid2">
+                     <div class="row">
+                        <div class="col-1">
+                           <div id="wb_Heading2" style="display:block;width:100%;z-index:0;">
+                              <h1 id="Heading2">Pydentitester!</h1>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_FlexContainer2">
+      <div id="FlexContainer2">
+         <div id="wb_Card1" style="display:flex;z-index:3;" class="card">
+            <div id="Card1-card-header">OIDC Client</div>
+            <div id="Card1-card-body">
+               <div id="Card1-card-item1">This allows you to configure Identity Providers (IdPs) and will eventually allow you to perform a variety of OIDC flows.  For now, just Authorization Code Flow is supported.</div>
+            </div>
+            <div id="Card1-card-item2"><a href="./oidc_client">OIDC Client</a></div>
+         </div>
+         <div id="wb_Card2" style="display:flex;z-index:4;" class="card">
+            <div id="Card2-card-header">SCIM Client</div>
+            <div id="Card2-card-body">
+               <div id="Card2-card-item1">This allows you to test whether or not a SCIM endpoint is returning back information appropriately at a super basic level.  This will be implemented at some point.</div>
+            </div>
+            <div id="Card2-card-item2">Not available yet!</div>
+         </div>
+         <div id="wb_Card3" style="display:flex;z-index:5;" class="card">
+            <div id="Card3-card-header">LDAP Client</div>
+            <div id="Card3-card-body">
+               <div id="Card3-card-item1">This allows you to test whether or not an LDAP server is responsive by doing a simple bind and enumerating the rootDSE.  This will be implemented at some point.</div>
+            </div>
+            <div id="Card3-card-item2">Not available yet!</div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid3">
+      <div id="LayoutGrid3">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_Text4">
+                  <span style="color:#000000;font-family:Arial;font-size:27px;line-height:30px;"><strong>Eventual (Hopefully!) Features</strong></span><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"><br></span><span style="color:#000000;font-family:Arial;font-size:15px;line-height:17px;"><br>• Client for OIDC, SCIM, LDAP<br>• Bare minimum server interfaces for OIDC, SCIM, LDAP<br>• Small, containerized so you can spin it up<br>• Some small degree of cert management and public cert scraping</span>
+               </div>
+            </div>
+            <div class="col-2">
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid4">
+      <div id="LayoutGrid4">
+         <div class="row">
+            <div class="col-1">
+               <hr id="Line1" style="display:block;width:100%;z-index:7;">
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
